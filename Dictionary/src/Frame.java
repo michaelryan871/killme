@@ -90,11 +90,12 @@ public class Frame {
 	      JTextArea words = new JTextArea(); 
 	      words.setBounds(5,115, 207, 590);
 	      words.setEditable(false);
-	      frame.add(words);
-	      
-	       JScrollPane scroll = new JScrollPane(words);
-	       scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-	      
+	
+	      JScrollPane scroll = new JScrollPane(words);
+	      scroll.setBounds(5,115, 207, 590);
+	      scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+	       
+	       frame.add(words);
 	      
 	      // Border(s)
 	      Border wordsBorder = BorderFactory.createLineBorder(Color.BLACK);
